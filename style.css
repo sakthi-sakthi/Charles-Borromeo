@@ -1242,7 +1242,7 @@ ul.tabs-nav .tab-nav.active {
     font-weight: 600;
     line-height: 1.6;
     font-style: italic;
-    color: #fff;
+    color: #1f0ebc;
 }
 
 .testimonial-cont p::after {
@@ -1267,7 +1267,7 @@ ul.tabs-nav .tab-nav.active {
     margin-left: 20px;
     font-size: 14px;
     font-weight: 600;
-    color: #fff;
+    color: red;
 }
 
 .testimonial-cont .entry-footer h4 span {
