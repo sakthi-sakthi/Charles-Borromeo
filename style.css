@@ -2587,7 +2587,7 @@ nav .navbar .links li .sub-menu li{
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: rgba(21, 21, 21, 0.9);
+    background: rgba(232,237,238,.8);
 }
 /* Style for the container div */
 .social-icons {
