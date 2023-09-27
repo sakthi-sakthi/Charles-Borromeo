@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Sisters of St. Charles Borromeo - Eastern province</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/elegant-fonts.css" />
+
+    <link rel="stylesheet" href="css/themify-icons.css" />
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <link rel="icon" href="images/logos/leftlogo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="container">
+        <h2  class="entry-title"><center>Calendar Events</center></h2>
+      <div id="calendar"></div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const calendarEl = document.getElementById("calendar");
+          const calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: "dayGridMonth",
+            events: [
+              {
+                title: "Church Event 1",
+                start: "2023-09-15",
+                end: "2023-09-16",
+                editable: true, // Enable drag-and-drop and resizing for this event
+              },
+              {
+                title: "Church Event 2",
+                start: "2023-10-10",
+                end: "2023-10-12",
+                editable: true,
+              },
+              {
+                title: "Church Event 3",
+                start: "2023-09-25",
+                end: "2023-09-27",
+                editable: true,
+              },
+              {
+                title: "Church Event 4",
+                start: "2023-10-05",
+                end: "2023-10-07",
+                editable: true,
+              },
+              {
+                title: "Church Event 5",
+                start: "2023-09-12",
+                end: "2023-09-14",
+                editable: true,
+              },
+              // Add more events as needed
+            ],
+            eventResizableFromStart: true, // Allow resizing from the start of the event
+            eventDurationEditable: true, // Allow changing event duration
+          });
+          calendar.render();
+        });
+      </script>
+      
+  </body>
+</html>
