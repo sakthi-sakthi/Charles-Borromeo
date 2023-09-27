@@ -39,49 +39,49 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const calendarEl = document.getElementById("calendar");
-          const calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: "dayGridMonth",
-            events: [
-              {
-                title: "Church Event 1",
-                start: "2023-09-15",
-                end: "2023-09-16",
-                editable: true, // Enable drag-and-drop and resizing for this event
-              },
-              {
-                title: "Church Event 2",
-                start: "2023-10-10",
-                end: "2023-10-12",
-                editable: true,
-              },
-              {
-                title: "Church Event 3",
-                start: "2023-09-25",
-                end: "2023-09-27",
-                editable: true,
-              },
-              {
-                title: "Church Event 4",
-                start: "2023-10-05",
-                end: "2023-10-07",
-                editable: true,
-              },
-              {
-                title: "Church Event 5",
-                start: "2023-09-12",
-                end: "2023-09-14",
-                editable: true,
-              },
-              // Add more events as needed
-            ],
-            eventResizableFromStart: true, // Allow resizing from the start of the event
-            eventDurationEditable: true, // Allow changing event duration
-          });
-          calendar.render();
+      document.addEventListener("DOMContentLoaded", function () {
+        const calendarEl = document.getElementById("calendar");
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          events: [
+            {
+              title: "Church Event 1",
+              start: "2023-09-15",
+              end: "2023-09-16",
+              editable: true,
+            },
+            {
+              title: "Church Event 2",
+              start: "2023-10-10",
+              end: "2023-10-12",
+              editable: true,
+            },
+            {
+              title: "Church Event 3",
+              start: "2023-09-25",
+              end: "2023-09-27",
+              editable: true,
+            },
+            {
+              title: "Church Event 4",
+              start: "2023-10-05",
+              end: "2023-10-07",
+              editable: true,
+            },
+            {
+              title: "Church Event 5",
+              start: "2023-09-12",
+              end: "2023-09-14",
+              editable: true,
+            },
+          ],
+          eventResizableFromStart: true,
+          eventDurationEditable: true,
+          dayMaxEventRows: 2, // Set the maximum number of visible events in a day cell
+          eventLimit: true,   // Enable the "more" link
         });
-      </script>
-      
+        calendar.render();
+      });
+    </script>
   </body>
 </html>
