@@ -2277,7 +2277,7 @@ nav .navbar{
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 0 19px;
+  padding: 0 13px 0 0px;
   font-family: fangsong;
 }
 .navbar .logo a{
@@ -2306,7 +2306,7 @@ nav .navbar .links li a{
   text-decoration: none;
   white-space: nowrap;
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
 }
 .links li:hover .htmlcss-arrow,
