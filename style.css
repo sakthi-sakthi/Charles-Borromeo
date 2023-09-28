@@ -2624,4 +2624,6 @@ nav .navbar .links li .sub-menu li{
     color: #fff;
 }
 
-  
+.js-sub-menu.sub-menu li a:hover {
+    color: #00ff96;
+}
